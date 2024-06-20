@@ -1,13 +1,22 @@
 # git_folder
-def generate_markdown_links(files):
-    markdown = ""
-    for file in files:
-        file_url = f"https://github.com/sandhyachandane342/git_folder/blob/main/{file}"
-        markdown += f"- [{file}]({file_url})\n"
-    return markdown
-uploaded_files = ["easyecom_suborders.py", "order_details_wh_holidays_date.py", "order_shipping_page_count.py", "read_new_file.py", "zec.py", "zmto_new_data_file.py", "zre.py"]
+def generate_markdown_file_list(files):
+    markdown_content = "### Uploaded Files\n\n"
+    for file_name in files:
+        markdown_content += f"- [{file_name}]({file_name})\n"
+    return markdown_content
 
-markdown_content = generate_markdown_links(uploaded_files)
+uploaded_files = [
+    "easyecom_suborders.py", 
+    "order_details_wh_holidays_date.py", 
+    "order_shipping_page_count.py", 
+    "read_new_file.py", 
+    "zec.py", 
+    "zmto_new_data_file.py", 
+    "zre.py"
+]
 
+markdown_text = generate_markdown_file_list(uploaded_files)
+with open("uploaded_files.md", "w", encoding="utf-8") as markdown_file:
+    markdown_file.write(markdown_text)
 
-print(markdown_content)
+print("Markdown file created successfully.")
