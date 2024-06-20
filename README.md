@@ -4,7 +4,7 @@ def generate_markdown_links(files):
     for file in files:
         # Assuming the files are uploaded in a repository named 'your-repo'
         # Replace 'your-repo' with your actual repository name
-        file_url = f"https://github.com/sandhyachandane342/git_folder{file}"
+        file_url = f"https://github.com/sandhyachandane342/git_folder/blob/main/{file}"
         markdown += f"- [{file}]({file_url})\n"
     return markdown
 
