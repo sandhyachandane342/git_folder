@@ -5,7 +5,6 @@ def generate_markdown_links(file_names, base_url):
         markdown_content += f"- [{file_name}]({base_url}/{file_name})\n"
     return markdown_content
 
-# List of uploaded file names
 file_names = [
     "easyecom_suborders.py",
     "order_details_wh_holidays_date.py",
@@ -16,12 +15,10 @@ file_names = [
     "zre.py"
 ]
 
-# Base URL of your GitHub repository
 base_url = "https://github.com/sandhyachandane342/git_folder"
 
 markdown_text = generate_markdown_links(file_names, base_url)
 
-# Write the markdown text to a file
 with open("uploaded_files.md", "w", encoding="utf-8") as markdown_file:
     markdown_file.write(markdown_text)
 
