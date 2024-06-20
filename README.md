@@ -1,25 +1,38 @@
 # git_folder
-def generate_markdown_links(file_names, base_url):
-    markdown_content = "### Uploaded Files\n\n"
-    for file_name in file_names:
-        markdown_content += f"- [{file_name}]({base_url}/{file_name})\n"
-    return markdown_content
+# Foobar
 
-file_names = [
-    "easyecom_suborders.py",
-    "order_details_wh_holidays_date.py",
-    "order_shipping_page_count.py",
-    "read_new_file.py",
-    "zec.py",
-    "zmto_new_data_file.py",
-    "zre.py"
-]
+Foobar is a Python library for dealing with word pluralization.
 
-base_url = "https://github.com/sandhyachandane342/git_folder"
+## Installation
 
-markdown_text = generate_markdown_links(file_names, base_url)
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-with open("uploaded_files.md", "w", encoding="utf-8") as markdown_file:
-    markdown_file.write(markdown_text)
+```bash
+pip install foobar
+```
 
-print("Markdown file created successfully.")
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
