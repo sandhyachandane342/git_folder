@@ -1,16 +1,10 @@
 # git_folder
-def generate_markdown_links(files):
-markdown = ""
-for file in files:
-   file_url = f"https://github.com/sandhyachandane342/git_folder/blob/main/{file}"
-   markdown += f"- [{file}]({file_url})\n"
-return markdown
-uploaded_files = ["easyecom_suborders.py",
-              "order_details_wh_holidays_date.py",
-              "order_shipping_page_count.py",
-              "read_new_file.py",
-              "zec.py",
-              "zmto_new_data_file.py",
-              "zre.py"]
-markdown_content = generate_markdown_links(files)
-print(markdown_links)
+from setuptools import setup
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+setup(
+    name='an_example_package',
+    long_description=long_description,
+    long_description_content_type='text/markdown'
+)
