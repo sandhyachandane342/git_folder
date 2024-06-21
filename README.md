@@ -26,12 +26,6 @@
     <h2>Contributing</h2>
     <p>If you wish to contribute or have suggestions for improvements, please open an issue or submit a pull request on <a href="https://github.com/sandhyachandane342/git_folder">GitHub</a>.</p>
     
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-    
-    <footer>
-        <p>Generated with HTML markup. Last updated: June 21, 2024</p>
-    </footer>
 </body>
 </html>
 
