@@ -53,25 +53,25 @@ project/
 ├── zec.py
 └── zre.py
 
-#easyecom_suborders.py: 
+# easyecom_suborders.py: 
    Handles order details in the easyecom_suborders table.
          
-#order_details_wh_holidays_date.py: 
+# order_details_wh_holidays_date.py: 
   Manages warehouse holidays dates in the order_details table.
           
-#order_shipping_page_count.py: 
+# order_shipping_page_count.py: 
   Handles order and shipping data and also manages pagination or related functionalities.
            
-#read_new_file.py: 
+# read_new_file.py: 
   Handles reading operations from files.
            
-#zmto_new_data_file.py: 
+# zmto_new_data_file.py: 
   Finds order data using specific reference codes in the easyecom_suborders table.
            
-#zec.py: 
+# zec.py: 
   Finds order data using specific reference codes in the order_details table.
                      
-#zre.py: 
+# zre.py: 
   Finds data using specific reference codes in the all_return table.
 
 ## Contributing
